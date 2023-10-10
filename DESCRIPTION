@@ -127,5 +127,3 @@ Roxygen: list(
       roclets = c("collate", "namespace", "rd", "roxyglobals::global_roclet")
     )
 RoxygenNote: 7.2.3
-Remotes: 
-    r-lib/testthat

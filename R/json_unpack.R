@@ -34,7 +34,7 @@ json_unpack.data.frame <- function(data, cols, ..., names_sep = NULL, names_repa
 }
 
 # @export
-json_unpack.tbl_lazy <- function(data, cols, names_sep = NULL, names_repair = "check_unique") {
+# json_unpack.tbl_lazy <- function(data, cols, ..., names_sep = NULL, names_repair = "check_unique") {
   # select string_agg(quotename(k) + case t
   #                   when 0 then ' nchar(1)'       -- javascript null
   #                   when 1 then ' nvarchar(max)'  -- javascript string
@@ -49,4 +49,4 @@ json_unpack.tbl_lazy <- function(data, cols, names_sep = NULL, names_repair = "c
   #   cross apply openjson(j1.value) as j2
   #   group by j2.[key]
   # ) as kt(k, t)
-}
+# }
